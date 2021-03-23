@@ -1,0 +1,34 @@
+
+public class Operacoes {
+	float num1, num2;
+    
+    public Operacoes(){
+       
+    }
+    
+    public void soma(float num1,float num2){
+        float result;
+        result=num1+num2;
+        System.out.println("O resultado da Soma é:"+result);
+    }
+    
+     public void sub(float num1,float num2){
+        float result;
+        result=num1-num2;
+        System.out.println("O resultado da subtração é:"+result);
+    }
+     
+      public void divi(float num1,float num2){
+        float result;
+        result=num1/num2;
+        System.out.println("O resultado da divisão é:"+result);
+    }
+    
+     public void multi(float num1,float num2){
+        float result;
+        result=num1*num2;
+        System.out.println("O resultado da multiplicação é:"+result);
+    }
+    
+}
+
