@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+	     int opc;
+	     Operacoes calc = new Operacoes();
+	     Scanner teclado = new Scanner(System.in);
+	     int num1,num2;	    
+	     
+	     do{
+	         System.out.println("1. Somar\n");
+	         System.out.println("2. Subtrair\n");
+	         System.out.println("3. Dividir\n");
+	         System.out.println("4. Multiplicar\n");
+	         System.out.println("5. Sair\n");
+	         System.out.println("Opção: ");
+	         opc = teclado.nextInt();
+	         teclado.nextLine();
+	         
+	         switch(opc){
+	             case 1:
+	                 System.out.println("1.Digite o 1º valor:");
+	                 num1 = teclado.nextInt();
+	                 System.out.println("1.Digite o 2º valor:");
+	                 num2 = teclado.nextInt();
+	                 calc.soma(num1, num2);
+	                 break;
+	             case 2:
+	                 System.out.println("1.Digite o 1º valor:");
+	                 num1 = teclado.nextInt();
+	                 System.out.println("1.Digite o 2º valor:");
+	                 num2 = teclado.nextInt();
+	                 calc.sub(num1, num2);
+	                 break;
+	             case 3:
+	                 System.out.println("1.Digite o 1º valor:");
+	                 num1 = teclado.nextInt();
+	                 System.out.println("1.Digite o 2º valor:");
+	                 num2 = teclado.nextInt();
+	                 calc.divi(num1, num2);
+	                 break;
+	             case 4:
+	                 System.out.println("1.Digite o 1º valor:");
+	                 num1 = teclado.nextInt();
+	                 System.out.println("1.Digite o 2º valor:");
+	                 num2 = teclado.nextInt();
+	                 calc.multi(num1, num2);
+	                 break;   
+	                 
+	             case 5:
+	                 System.out.println("Saindo...");
+	                 teclado.close();
+	                 break;
+	         }
+	     }while(opc!=5);
+	    }
+	    
+	}
